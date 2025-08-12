@@ -1,0 +1,126 @@
+/* Navbar.css */
+
+/* Base navbar styles */
+.navbar {
+  padding: 1rem 1.5rem;
+}
+
+.navbar.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-brand:hover {
+  color: #ffc107;
+}
+
+/* Nav links */
+.navbar .nav-link {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ffc107;
+}
+
+.navbar .nav-link.active {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+/* Dropdown menu */
+.navbar .dropdown-menu {
+  background-color: #343a40;
+  border: none;
+}
+
+.navbar .dropdown-item {
+  color: #fff;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #495057;
+  color: #ffc107;
+}
+
+/* Search form */
+.search-form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-form .icon {
+  position: absolute;
+  left: 10px;
+  color: #aaa;
+}
+
+.search-form input.form-control {
+  padding-left: 2rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #495057;
+  color: #fff;
+}
+
+.search-form input.form-control::placeholder {
+  color: #ccc;
+}
+
+/* Mobile toggler icon */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* Navbar.css */
+
+/* Transparent background */
+.navbar.transparent {
+  background-color: transparent !important;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Nav brand and links */
+.navbar.transparent .navbar-brand,
+.navbar.transparent .nav-link {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar.transparent .nav-link:hover {
+  color: #ffc107;
+}
+
+.navbar.transparent .nav-link.active {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+/* Dropdown */
+.navbar.transparent .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.navbar.transparent .dropdown-item {
+  color: #fff;
+}
+
+.navbar.transparent .dropdown-item:hover {
+  background-color: #495057;
+  color: #ffc107;
+}
+
