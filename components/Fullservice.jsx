@@ -1,4 +1,4 @@
-// components/FullServices.jsx
+// components/FullService.jsx
 import '../styles/css/aos.css';
 
 export default function FullServices() {

@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Footer from '../../components/Footer';   // your footer component
 import Navbar from '../../components/Navbar';
 import GetInTouch from '../../components/GetInTouch';
-import FullServices from '../../components/FullServices'; // your full services
+import FullServices from '../../components/Fullservice'; // your full services
 import HeroSection from '../../components/HeroSection'; // your hero section
 import '../../styles/css/aos.css';
 
