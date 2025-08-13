@@ -20,7 +20,7 @@ export const metadata = {
   keywords: '',
   authors: [{ name: 'markus.co' }],
   icons: {
-    icon: '/ftco-32x32.png',
+    icon: '/favicon.ico',
   },
 };
 

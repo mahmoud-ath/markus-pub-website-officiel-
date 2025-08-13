@@ -17,7 +17,7 @@ export default function Portfolio() {
       <div className="container-fluid">
         <div className="row mb-5 no-gutters">
           <div className="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="">
-            <a href="/projects/Tech" className="work-thumb">
+            <a href="/portfolio/tech-horizon" className="work-thumb">
               <div className="work-text">
                 <h2>Tech Horizon</h2>
                 <p>Web Development</p>
@@ -26,7 +26,7 @@ export default function Portfolio() {
             </a>
           </div>
           <div className="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="100">
-            <a href="/projects/Data_visualization" className="work-thumb">
+            <a href="/portfolio/morocco-accident-analysis" className="work-thumb">
               <div className="work-text">
                 <h2>Data Visualization & analytics</h2>
                 <p>Saas Product</p>
@@ -35,7 +35,7 @@ export default function Portfolio() {
             </a>
           </div>
           <div className="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="">
-            <a href="/projects/StockMasterPro" className="work-thumb">
+            <a href="/portfolio/stock-master-pro" className="work-thumb">
               <div className="work-text">
                 <h2>Stock Master Pro</h2>
                 <p>CRM & Management & SaaS</p>
@@ -44,7 +44,7 @@ export default function Portfolio() {
             </a>
           </div>
           <div className="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="100">
-            <a href="/projects/voyages" className="work-thumb">
+            <a href="/portfolio/voyages" className="work-thumb">
               <div className="work-text">
                 <h2>voyages Elegant</h2>
                 <p>E-commerce Website</p>

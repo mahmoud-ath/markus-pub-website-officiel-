@@ -1,5 +1,5 @@
-'use client';
-import '../../styles/css/aos.css';
+"use client";
+import "../../styles/css/aos.css";
 
 export default function ProjectsDetails({ project }) {
   return (
@@ -8,7 +8,11 @@ export default function ProjectsDetails({ project }) {
         <div className="row mb-5">
           <div className="col-lg-7">
             {project.video ? (
-              <a href={project.video.src} className="mb-3 d-block video-container" data-fancybox="gal">
+              <a
+                href={project.video.src}
+                className="mb-3 d-block video-container"
+                data-fancybox="gal"
+              >
                 <div className="video-wrapper">
                   <video
                     src={project.video.src}
@@ -23,26 +27,26 @@ export default function ProjectsDetails({ project }) {
               </a>
             ) : null}
 
-            {project.images && project.images.map((img, i) => (
-              <a
-                href={img.src}
-                className={`mb-3 d-block${i === project.images.length - 1 ? '' : ' mb-3'}`}
-                key={img.src}
-                data-fancybox="gal"
-              >
-                <img src={img.src} alt={img.alt} className="img-fluid" />
-              </a>
-            ))}
+            {project.images &&
+              project.images.map((img, i) => (
+                <a
+                  href={img.src}
+                  className={`mb-3 d-block${
+                    i === project.images.length - 1 ? "" : " mb-3"
+                  }`}
+                  key={img.src}
+                  data-fancybox="gal"
+                >
+                  <img src={img.src} alt={img.alt} className="img-fluid" />
+                </a>
+              ))}
           </div>
 
           <div className="col-lg-4 ml-auto">
             <div className="block-fixed">
               <h3 className="mb-4">Project Details</h3>
-
-              {project.description && project.description.map((desc, i) => (
-                <p key={i}>{desc}</p>
-              ))}
-
+              {project.description &&
+                project.description.map((desc, i) => <p key={i}>{desc}</p>)}
               <ul className="list-unstyled mb-5">
                 <li className="mb-3">
                   <strong className="d-block text-black">Role:</strong>
@@ -61,20 +65,20 @@ export default function ProjectsDetails({ project }) {
                   {project.duration}
                 </li>
               </ul>
-
               {project.projectUrl && (
                 <p>
                   <a
                     href={project.projectUrl}
-                    data-fancybox="gal"
+                    {...(project.projectUrl.match(/\.(mp4|webm|jpg|png|jpeg)$/)
+                      ? { "data-fancybox": "gal" }
+                      : { target: "_blank", rel: "noopener noreferrer" })}
                     className="btn btn-outline-black"
-                    target="_blank"
-                    rel="noopener noreferrer"
                   >
                     View Project
                   </a>
                 </p>
               )}
+              
             </div>
           </div>
         </div>
