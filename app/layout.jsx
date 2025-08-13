@@ -19,11 +19,12 @@ export const metadata = {
   description: '',
   keywords: '',
   authors: [{ name: 'markus.co' }],
-  viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
   icons: {
     icon: '/ftco-32x32.png',
   },
 };
+
+export const viewport = 'width=device-width, initial-scale=1, shrink-to-fit=no';
 
 export default function RootLayout({ children }) {
   return (
